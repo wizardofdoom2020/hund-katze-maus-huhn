@@ -1,3 +1,42 @@
 *{
 	box-sizing: border-box;
 }
+/* breite und Eigenschaften des wrappers festlegen */
+#wrapper{width: 960px; 
+	/*margin auto zentriert automatisch in der Mitte*/
+		margin:auto; 
+		background-color: bisque;
+	}
+
+h1{font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: black;
+	font-size: x-large;
+	text-align: center;
+	padding: 5px;}
+h2{font-family: Arial, Helvetica, sans-serif;
+	color: teal;
+	font-weight: bolder; 
+	text-align: center; 
+	padding: 5px;}
+
+/* um alle 4 Tierboxen nebeneinander zu stellen, muss die Oberbox div row angesprochen werden. Das ist die class row. */
+.row{display: flex;}
+
+/*jede Tierbox soll dynamisch 25% vom wrapper gross sein, da es 4 Bilder sind.*/
+.Tier Flex{width: 25%;
+/* kann man auch statt 25% so angeben mit flex befehlen*/
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+/* flex grow, flex shrink, flex basis zusammen kann man auch als flex eingeben*/
+flex: 1 1 auto}
+
+/*Zweite Uebung zum Positionieren mit 2 Fotos via Float*/
+.Tier-Float{float: left;
+width: 50%;}
+.Tier-Float img{width: 100%;}
+
+/*jedes Bild füllt eine col zu 100% aus. Anstatt Prozent kann man aber auch exakte Pixel ausrechnen, dann wachsen sie bei Änderungen aber nicht mit.*/
+.Tier img{width: 100%;height: 100%;}
+.clearfix{clear:both}

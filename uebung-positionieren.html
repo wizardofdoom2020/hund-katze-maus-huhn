@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Übung positionieren - Teil III</title>
-		<link rel="stylesheet" href="reset.css">
-	</head>
-	<body>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Übung positionieren - Teil III</title>
+    <link rel="stylesheet" href="reset.css" />
+    <!-- Das zweite Stylesheet verlinken im html! -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Hier kommt ein wrapper rein als ID, umfasst die Bilder, Ueberschriften und laut Uebung max 960px breit -->
+    <div id="wrapper">
+      <!-- Ueberschrift H1 der Uebung -->
+      <h1>
+        ÜBUNG Hund Katze Maus Huhn
+      </h1>
+      <!-- jetzt kommt eine Box mit allen Tieren (Reihe)-->
+      <div class="row">
+        <!-- jetzt kommen 4 Einzelboxen pro Tier (Spalten also col, aber als Tier umbenannt-->
+        <div class="Tier Flex">
+          <img src="/hund.jpg" alt="Hund" />
+          <h2>Hund</h2>
+        </div>
+
+        <div class="Tier Flex">
+          <img src="/katze.jpg" alt="Katze" />
+          <h2>Katze</h2>
+        </div>
+
+        <div class="Tier Flex">
+          <img src="/maus.jpg" alt="Maus" />
+          <h2>Maus</h2>
+        </div>
+
+        <div class="Tier Flex">
+          <img src="/huhn.jpg" alt="Huhn" />
+          <h2>Huhn</h2>
+		</div>
+
+
 		
-	</body>
+	  </div> <!-- Ende der Row box -->
+	  
+	  <div class="Reihe">
+	  	<div class="Tier-Float">
+		  <img src="/hund.jpg" alt="Hund">
+		  <p>Hund</p>
+		  </div>
+  
+	  <div class="Tier-Float">
+		  <img src="/katze.jpg" alt="Katze">
+		  <p>Katze</p>
+		</div>
+		
+<div class="clearfix"></div>
+
+		</div> <!-- Ende der Reihe mit float -->
+    </div> <!-- Ende des Wrappers -->
+  </body>
 </html>
